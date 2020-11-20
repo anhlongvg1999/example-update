@@ -17,6 +17,9 @@ function createWindow () {
   });
   mainWindow.once('ready-to-show', () => {
     autoUpdater.checkForUpdatesAndNotify();
+    // setInterval(() => {
+    //   autoUpdater.checkForUpdates()
+    // }, 60000)
   });
 }
 
